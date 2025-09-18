@@ -39,19 +39,28 @@ export const Contact = () => {
       >
         {/* Heading */}
         <div>
-          <h1 className="text-xl md:text-2xl font-bold">Contact Me</h1>
-          <p>Please fill out the box to contact me</p>
+          <h1 className="text-center md:text-start text-xl md:text-2xl font-extrabold tracking-wider bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
+            Contact Me
+          </h1>
+          <p className="text-center md:text-start tracking-wider bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
+            Please fill out the box to contact me
+          </p>
         </div>
 
         {/* Contact Form */}
         <div className=" mt-2 flex justify-center-safe">
-          <div className="md:w-150 bg-gray-200 px-5 py-2 rounded-md flex flex-col md:items-center">
-            <p className=" text-lg font-bold">Send Your Message</p>
+          <div className="w-screen md:w-150 bg-violet-300 px-5 py-2 rounded-xl flex flex-col md:items-center border-4 border-purple-700 shadow-lg/50">
+            <p className=" text-lg font-bold text-center md:text-start  tracking-wider bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
+              Send Your Message
+            </p>
             <form onSubmit={handleSubmit(onSubmit)} ref={myForm}>
               {/* Name Field */}
 
               <div className="my-2">
-                <label className="block my-1 font-medium" htmlFor="username">
+                <label
+                  className="block my-1 font-medium text-indigo-500"
+                  htmlFor="username"
+                >
                   Full Name
                 </label>
                 <input
@@ -60,7 +69,8 @@ export const Contact = () => {
                   id="username"
                   name="username"
                   placeholder="Enter Your Full Name"
-                  className="md:w-110 py-1 px-2  outline-2 bg-white outline-gray-400 rounded"
+                  className="w-full text-slate-600
+                  focus:outline-emerald-400 focus:bg-neutral-500 focus:text-emerald-400 font-semibold  md:w-110 py-1 px-2 outline-2 bg-white outline-gray-400 rounded"
                 />
               </div>
               {errors.username && (
@@ -71,7 +81,10 @@ export const Contact = () => {
               {/* Email Field */}
 
               <div className="my-2">
-                <label className="block my-1 font-medium" htmlFor="email">
+                <label
+                  className="block my-1 font-medium text-indigo-500"
+                  htmlFor="email"
+                >
                   Email Address
                 </label>
                 <input
@@ -80,7 +93,9 @@ export const Contact = () => {
                   id="email"
                   name="email"
                   placeholder="Email Address"
-                  className="md:w-110 py-1 px-2 bg-white outline-2 outline-gray-400 rounded"
+                  className="w-full 
+                  text-slate-600
+                  focus:outline-emerald-400 focus:bg-neutral-500 focus:text-emerald-400 font-semibold md:w-110 py-1 px-2 bg-white outline-2 outline-gray-400 rounded"
                 />
               </div>
               {errors.email && (
@@ -91,7 +106,10 @@ export const Contact = () => {
               {/* Message Field */}
 
               <div className="my-2">
-                <label className="block my-1 font-medium" htmlFor="message">
+                <label
+                  className="block my-1 font-medium text-indigo-500"
+                  htmlFor="message"
+                >
                   Message
                 </label>
                 <textarea
@@ -99,7 +117,9 @@ export const Contact = () => {
                   id="message"
                   name="message"
                   placeholder="Type your message here"
-                  className="md:w-110 min-w-50 px-2 py-1 bg-white outline-2 outline-gray-400 rounded"
+                  className="w-full h-30 
+                  text-slate-600
+                  focus:outline-emerald-400 focus:bg-neutral-500 focus:text-emerald-400 font-semibold md:w-110 min-w-50 px-2 py-1 bg-white outline-2 outline-gray-400 rounded"
                 ></textarea>
               </div>
               {errors.message && (
@@ -111,8 +131,10 @@ export const Contact = () => {
               <div className="my-2">
                 <button
                   type="submit"
-                  className="w-50 md:w-110 px-2 py-1 font-semibold bg-green-400 text-white rounded-md cursor-pointer hover:bg-green-600
-                hover:scale-110 duration-300"
+                  className="w-full md:w-110 px-2 py-1 font-semibold bg-green-400 text-fuchsia-500
+                 border-2 border-cyan-600 rounded-md cursor-pointer hover:bg-green-600
+                hover:scale-105 duration-300
+                active:bg-purple-500"
                 >
                   Send
                 </button>

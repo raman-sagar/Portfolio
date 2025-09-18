@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <>
       <div className="max-w-screen container mx-auto py-4 px-4 md:px-20 flex flex-col items-center-safe bg-rose-700">
-        <h1 className="my-2 text-sm font-medium">Visit On </h1>
+        <h1 className="my-2 text-sm font-medium bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">Visit On </h1>
         {/* Contact Icons */}
         <div className="w-50 border-b-1 border-b-slate-500 pb-4 flex justify-center-safe ">
           <ul className=" flex space-x-2">
@@ -44,10 +44,10 @@ export const Footer = () => {
         <br />
         {/* Declaration */}
         <div>
-          <p className="text-sm text-center">
+          <p className="text-sm text-center bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
             &copy; 2025 Your Company. All rights reserved.
           </p>
-          <p className="text-sm text-center ">
+          <p className="text-sm text-center bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent ">
             Supportive Partner ❤️ Raman sagar
           </p>
         </div>
