@@ -6,6 +6,8 @@ import bootstrap from "../../public/Bootstrap.png";
 import js from "../../public/javascript.png";
 import react from "../../public/reactjs.png";
 
+import "./Portfolio.css";
+
 export const Portfolio = () => {
   const cardItem = [
     { id: 1, logo: html, name: "HTML", text: "yah html hai" },
@@ -17,16 +19,26 @@ export const Portfolio = () => {
   ];
   return (
     <>
-      <div name="Portfolio" className="max-w-screen container mx-auto py-4 px-4 md:px-20 ">
-        <h1 className="text-xl md:text-2xl font-bold">PortFolio</h1>
-        <span className="text-lg font-medium underline decoration-2 underline-offset-1 cursor-pointer">
+      c
+      <div
+        name="Portfolio"
+        className="max-w-screen container mx-auto py-4 px-4 md:px-20 "
+        id="card"
+      >
+        <h1 className="text-xl md:text-2xl font-extrabold tracking-wider bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
+          PortFolio
+        </h1>
+        <span
+          className="text-lg font-medium cursor-pointer
+        bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent "
+        >
           Featured Projects
         </span>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5  mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10  mt-4">
           {cardItem.map(({ id, logo, name, text }) => (
             <div
               key={id}
-              className="w-fit md:size-[300px] border-[2px] bg-white rounded-lg shadow-lg p-1 cursor-pointer hover:scale-105 duration-300"
+              className="rounded-lg  p-1 cursor-pointer bg-emerald-400 relative card hover:bg-pink-400"
             >
               <div className="flex justify-center">
                 <img

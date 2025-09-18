@@ -1,0 +1,37 @@
+.card::after,
+.card::before {
+  content: "";
+  width: 102%;
+  height: 102%;
+
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-image: conic-gradient(from var(--angle), transparent 10%, green);
+
+  animation: angle 3s linear infinite;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes angle {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+.card::before {
+  width: 103%;
+  height: 103%;
+  filter: blur(10px);
+}
