@@ -1,0 +1,48 @@
+import React from "react";
+import html from "../../public/html.png";
+import css from "../../public/css.jpg";
+import tailwind from "../../public/tailwind.png";
+import bootstrap from "../../public/Bootstrap.png";
+import js from "../../public/javascript.png";
+import react from "../../public/reactjs.png";
+
+export const Experiance = () => {
+  const cardItem = [
+    { id: 1, logo: html, name: "HTML", text: "Minimum 2 Years Experiance" },
+    { id: 2, logo: css, name: "CSS", text: "Minimum 2 Years Experiance" },
+    { id: 3, logo: tailwind, name: "Tailwind", text: " Less than 1 year" },
+    { id: 4, logo: bootstrap, name: "Bootstrap", text: "Less than 1 year" },
+    { id: 5, logo: js, name: "javascript", text: "1 Year Experiance" },
+    { id: 6, logo: react, name: "React", text: "1 Year Experiance" },
+  ];
+  return (
+    <>
+      <div name="Experiance" className="max-w-screen container mx-auto py-4 px-4 md:px-20">
+        <h1 className="text-xl md:text-2xl font-bold">Experiance</h1>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5  mt-4">
+          {cardItem.map(({ id, logo, name, text }) => (
+            <div
+              key={id}
+              className="border-[2px] border-cyan-500 bg-slate-200 rounded-lg shadow-lg p-1 cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 duration-300"
+            >
+              <div className="flex justify-center">
+                <img
+                  src={logo}
+                  className="size-30 mt-1 p-1 border-[2px] border-cyan-500 rounded-full "
+                />
+              </div>
+              <div>
+                <div className="font-bold text-center text-green-500 my-2">
+                  {name}
+                </div>
+                <p className=" text-center font-bold px-2 py-1 text-orange-500">
+                  {text}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
