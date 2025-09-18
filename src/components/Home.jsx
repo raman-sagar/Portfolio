@@ -23,14 +23,14 @@ export const Home = () => {
       >
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mt-12 md:mt-24  space-y-2 order-2 md:order-none">
-            <span className="text-xl">Welcome In My Feed</span>
+            <span className="text-xl text-zinc-500">Welcome In My Feed</span>
             {/* Developer*/}
 
             <div className="flex space-x-1 text-2xl md:text-4xl">
-              <h1>Hello,I'm a </h1>
+              <h1 className="text-stone-500 ">Hello,I'm a </h1>
 
               <ReactTyped
-                className="text-red-700 font-bold break-all"
+                className="bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent font-bold break-all"
                 strings={["Raman Sagar", "Developer", "Programmer", "Coder"]}
                 typeSpeed={40}
                 backSpeed={50}
@@ -38,18 +38,28 @@ export const Home = () => {
               />
             </div>
 
-            <p className="text-sm md:text-medium text-justify">
+            <p className="text-sm text-lime-600 md:text-medium text-justify">
               <br />
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              repudiandae ducimus totam ratione eaque quibusdam corrupti culpa
-              voluptatibus non fugiat.
+              llorem100 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Fugit minus aliquid, quibusdam odit quas laboriosam velit eum
+              similique, nisi dolor nemo amet praesentium. Atque exercitationem
+              nihil placeat libero voluptate voluptatibus id dignissimos quo
+              consequuntur doloribus? Ex minima ad ratione, harum praesentium
+              iste iure eum, voluptates accusamus nobis saepe accusantium
+              voluptate ipsum tempore facere eligendi repellendus enim possimus
+              pariatur? Vero exercitationem, suscipit asperiores libero
+              explicabo nihil inventore, laudantium nostrum sunt rerum mollitia
+              voluptate nemo delectus neque cum nam soluta nisi excepturi iste
+              unde tempore earum dignissimos. Dolores ullam quam ex
+              consequuntur, exercitationem neque maxime omnis totam nesciunt,
+              cum deserunt, quo perspiciatis!
             </p>
             <br></br>
 
             <div className="flex flex-wrap items-center flex-col space-y-6 md:space-y-0  md:flex-row justify-between  ">
               {/*Social Media Icons */}
               <div className="space-y-2 ">
-                <h1 className="font-bold text-center">Available on</h1>
+                <h1 className="text-center bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent font-bold">Available on</h1>
                 <ul className="flex space-x-2">
                   <li>
                     <a
@@ -85,7 +95,7 @@ export const Home = () => {
               {/*Skills Icons */}
 
               <div className="space-y-2 mb-4 ">
-                <h1 className="font-bold">Currently working on</h1>
+                <h1 className="bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent font-bold">Currently working on</h1>
 
                 <div className="flex space-x-2">
                   <FaHtml5 className="text-xl md:text-3xl text-orange-500 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
