@@ -1,0 +1,26 @@
+#cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 2px solid purple;
+  border-radius: 50%;
+  transition: all 200ms ease-out;
+  cursor: default;
+}
+.pointer {
+  width: 20px;
+  height: 20px;
+  border: 2px solid greenyellow;
+  background-color: rgb(10, 133, 133);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 150ms ease-out;
+  z-index: 100;
+}
+.scale {
+  width: 45px;
+  height: 45px;
+}
