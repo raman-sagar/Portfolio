@@ -12,14 +12,14 @@ import { FaBootstrap } from "react-icons/fa6";
 
 import { ReactTyped, Typed } from "react-typed";
 
-import pic from "../../public/photo.avif";
+import pic from "../../public/profile1.jpg";
 
 export const Home = () => {
   return (
     <>
       <div
         name="Home"
-        className="max-w-screen border-b-2 border-b-fuchsia-500 container mx-auto px-4 md:px-20 mt-20"
+        className="max-w-screen border-b-2 border-b-fuchsia-500 container mx-auto px-4 md:px-20 mt-16"
       >
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 mt-12 md:mt-24  space-y-2 order-2 md:order-none">
@@ -38,9 +38,9 @@ export const Home = () => {
               />
             </div>
 
-            <p className="text-sm text-lime-600 md:text-medium text-justify">
+            <p className="text-sm text-fuchsia-600 md:text-medium text-justify">
               <br />
-              llorem100 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Fugit minus aliquid, quibusdam odit quas laboriosam velit eum
               similique, nisi dolor nemo amet praesentium. Atque exercitationem
               nihil placeat libero voluptate voluptatibus id dignissimos quo
@@ -59,7 +59,9 @@ export const Home = () => {
             <div className="flex flex-wrap items-center flex-col space-y-6 md:space-y-0  md:flex-row justify-between  ">
               {/*Social Media Icons */}
               <div className="space-y-2 ">
-                <h1 className="text-center bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent font-bold">Available on</h1>
+                <h1 className="text-center bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent font-bold">
+                  Available on
+                </h1>
                 <ul className="flex space-x-2">
                   <li>
                     <a
@@ -95,7 +97,9 @@ export const Home = () => {
               {/*Skills Icons */}
 
               <div className="space-y-2 mb-4 ">
-                <h1 className="bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent font-bold">Currently working on</h1>
+                <h1 className="bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent font-bold">
+                  Currently working on
+                </h1>
 
                 <div className="flex space-x-2">
                   <FaHtml5 className="text-xl md:text-3xl text-orange-500 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
@@ -112,12 +116,15 @@ export const Home = () => {
             </div>
           </div>
           {/*Right Section */}
+
           <div className="md:w-1/2 md:ml-48 md:mt-20 mt-8 mb-4 order-1 md:order-none flex justify-center">
+            {/*Profile*/}
             <img
               src={pic}
               alt="Profile"
-              className="rounded-full size-60 md:size-[450px]"
+              className="rounded-lg size-60 md:size-[450px] border-2 border-cyan-400"
             />
+            {/*Profile */}
           </div>
         </div>
       </div>

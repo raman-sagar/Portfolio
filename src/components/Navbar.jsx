@@ -29,7 +29,7 @@ export const Navbar = () => {
   ];
   return (
     <>
-      <div className="max-w-screen container mx-auto px-0 md:px-20 shadow-xl h-16 fixed top-0 left-0 right-0 bg-purple-900 z-10">
+      <div className="max-w-screen container mx-auto px-0 md:px-20 shadow-xl h-16 fixed top-0 left-0 right-0 bg-purple-900 z-10 ">
         <div className="flex justify-between items-center h-16">
           <div className="flex space-x-2 px-4 ">
             <img className="size-12 rounded-full" src={pic} alt="Profile" />
@@ -70,8 +70,8 @@ export const Navbar = () => {
 
         {/*mobile navbar */}
         {!menu && (
-          <div className="h-40 w-full bg-purple-400 rounded-b-md px-4">
-            <ul className=" md:hidden h-screen flex flex-col space-y-2 text-sky-300 ">
+          <div className="h-40 w-full bg-green-300 rounded-b-md px-4">
+            <ul className=" md:hidden h-screen flex flex-col space-y-2 text-sky-600 ">
               {navItems.map((obj) => (
                 <li
                   key={obj.id}
