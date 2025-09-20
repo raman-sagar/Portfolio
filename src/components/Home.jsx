@@ -38,22 +38,22 @@ export const Home = () => {
               />
             </div>
 
-            <p className="text-sm text-fuchsia-600 md:text-medium text-justify">
+            <div className="text-base tracking-wider text-fuchsia-600 md:text-medium text-justify">
               <br />
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Fugit minus aliquid, quibusdam odit quas laboriosam velit eum
-              similique, nisi dolor nemo amet praesentium. Atque exercitationem
-              nihil placeat libero voluptate voluptatibus id dignissimos quo
-              consequuntur doloribus? Ex minima ad ratione, harum praesentium
-              iste iure eum, voluptates accusamus nobis saepe accusantium
-              voluptate ipsum tempore facere eligendi repellendus enim possimus
-              pariatur? Vero exercitationem, suscipit asperiores libero
-              explicabo nihil inventore, laudantium nostrum sunt rerum mollitia
-              voluptate nemo delectus neque cum nam soluta nisi excepturi iste
-              unde tempore earum dignissimos. Dolores ullam quam ex
-              consequuntur, exercitationem neque maxime omnis totam nesciunt,
-              cum deserunt, quo perspiciatis!
-            </p>
+              Hello, I'm Raman Sagar, a passionate web developer with a keen eye
+              frontend development. With a background in computer science, I
+              strive to create impactful and visually stunning website solutions
+              that leave a lasting impression. Proficient in JavaScript and
+              React Experienced with Web development Tools/Technologies. Strong
+              grasp of Web Design Principles/Concepts. Excellent problem-solving
+              skills. Effective communicator and collaborator. My mission is to
+              leverage my skills and creativity to deliver innovative JavaScript
+              and React solutions that exceed client expectations and contribute
+              positively to the digital landscape. I am committed to continuous
+              learning and growth, always seeking new challenges and
+              opportunities to expand my horizons.
+              <p>If you give me a chance to work in your company,I will gain more experiance and take your company to heights.</p>
+            </div>
             <br></br>
 
             <div className="flex flex-wrap items-center flex-col space-y-6 md:space-y-0  md:flex-row justify-between  ">

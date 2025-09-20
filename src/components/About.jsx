@@ -67,13 +67,22 @@ export const About = () => {
         <h1 className="text-xl font-semibold bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
           Professional Experience
         </h1>
-        <span className="text-violet-700">
-          [Job Title], [Company/Organization], [Dates] [Brief description of
-          responsibilities and achievements] [Job Title],
-          [Company/Organization], [Dates] [Brief description of responsibilities
-          and achievements] [Freelance/Contract Work], [Client/Organization],
-          [Dates] [Brief description of projects and contributions]
-        </span>
+        <div className="text-violet-700">
+          First of all, I am a Fresher.Despite this, I have completed six mega{" "}
+          <a
+            href="https://github.com/raman-sagar"
+            target="_blank"
+            className="underline decoration-blue-600 underline-offset-2 text-blue-700"
+          >
+            projects
+          </a>{" "}
+          and almost 20+ mini projects using JavaScript and React.So,I have
+          almost strong command on JavaScript and React.But this is not enough.
+          <p>
+            If you give me a chance to work in your company,I will gain more
+            experiance and take your company to heights.
+          </p>
+        </div>
         <br />
         <br />
 
@@ -83,6 +92,8 @@ export const About = () => {
         <span className="text-violet-700">
           [Award/Recognition], [Organization/Institution], [Year] [Achievement],
           [Organization/Platform], [Year]
+          <br />
+          Not awarded and I have not gained any achievements in any field
         </span>
         <br />
         <br />

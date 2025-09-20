@@ -5,7 +5,18 @@ body {
   font-family: "Poppins" sans-serif;
 }
 
-/* @layer components {
-  .image {
-  } 
-} */
+@layer components {
+  .portFolio {
+    @apply text-center md:text-start text-xl md:text-2xl font-extrabold tracking-wider bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent;
+  }
+  .featured-project {
+    @apply text-center md:text-start text-lg font-medium cursor-pointer
+        bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent;
+  }
+  .run-button {
+    @apply inline-block m-2 px-2 py-1 font-semibold bg-blue-400 text-white rounded-md cursor-pointer hover:bg-blue-600 active:bg-teal-800;
+  }
+  .code-button {
+    @apply inline-block m-2 px-2 py-1 font-semibold bg-green-900 text-white rounded-md cursor-pointer hover:bg-green-600 active:bg-pink-800;
+  }
+}

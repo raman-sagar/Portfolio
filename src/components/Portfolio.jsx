@@ -10,12 +10,58 @@ import "./Portfolio.css";
 
 export const Portfolio = () => {
   const cardItem = [
-    { id: 1, logo: html, name: "HTML", text: "yah html hai" },
-    { id: 2, logo: css, name: "CSS", text: "yah css hai" },
-    { id: 3, logo: tailwind, name: "Tailwind", text: "yah tailwind hai" },
-    { id: 4, logo: bootstrap, name: "Bootstrap", text: "yah bootstrap hai" },
-    { id: 5, logo: js, name: "javascript", text: "yah javascript hai" },
-    { id: 6, logo: react, name: "React", text: "yah react hai" },
+    {
+      id: 1,
+      logo: html,
+      name: "HTML",
+      runUrl: "https://centralcare.netlify.app/",
+      sourceUrl: "https://github.com/raman-sagar/Clinic-management-system",
+      text: `Clinic Management System.Fully Functional Mega Project using HTML CSS and JavaScript.
+      Click On 'Run Code' Button to run the Project 
+      Click On 'Source Code' Button to view the source code `,
+    },
+    {
+      id: 2,
+      logo: css,
+      name: "CSS",
+      runUrl: "https://carousel9389.netlify.app/",
+      sourceUrl: "https://github.com/raman-sagar/carousel",
+      text: `I have created Carousel using HTML and CSS only.Some new properties are used like 'anchor-name','position-area','scroll-snap-align','scroll-snap-type' and many more.
+      Click On 'Run Code' Button to run the Project 
+      Click On 'Source Code' Button to view the source code `,
+    },
+    {
+      id: 3,
+      logo: tailwind,
+      name: "Tailwind",
+      runUrl: "https://googleclone9389.netlify.app/",
+      sourceUrl: "https://github.com/raman-sagar/Google-Clone",
+      text: "yah tailwind hai",
+    },
+    {
+      id: 4,
+      logo: bootstrap,
+      name: "Bootstrap",
+      runUrl: "#",
+      sourceUrl: "#",
+      text: "yah bootstrap hai",
+    },
+    {
+      id: 5,
+      logo: js,
+      name: "javascript",
+      runUrl: "https://raman-gym.netlify.app/",
+      sourceUrl: "https://github.com/raman-sagar/gym-management-system",
+      text: "yah javascript hai",
+    },
+    {
+      id: 6,
+      logo: react,
+      name: "React",
+      runUrl: "#",
+      sourceUrl: "https://github.com/raman-sagar/Portfolio",
+      text: "yah react hai",
+    },
   ];
   return (
     <>
@@ -24,20 +70,16 @@ export const Portfolio = () => {
         className="max-w-screen container mx-auto py-4 px-4 md:px-20 "
         id="card"
       >
-        <h1 className="text-center md:text-start text-xl md:text-2xl font-extrabold tracking-wider bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
-          PortFolio
-        </h1>
-        <p
-          className="text-center md:text-start text-lg font-medium cursor-pointer
-        bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent "
-        >
-          Featured Projects
-        </p>
+        <h1 className="portFolio">PortFolio</h1>
+        <p className="featured-project">Featured Projects</p>
+        {/* card container */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10  mt-4">
-          {cardItem.map(({ id, logo, name, text }) => (
+          {/* Map method */}
+
+          {cardItem.map(({ id, logo, name, runUrl, sourceUrl, text }) => (
             <div
               key={id}
-              className="rounded-lg  p-1 cursor-pointer bg-emerald-400 relative card hover:bg-pink-400"
+              className=" rounded-lg  p-1 cursor-pointer bg-emerald-400 relative hover:bg-rose-400 card"
             >
               <div className="flex justify-center">
                 <img
@@ -49,17 +91,17 @@ export const Portfolio = () => {
                 <div className="font-bold text-center my-2 text-purple-600">
                   {name}
                 </div>
-                <p className="px-2 py-1 text-gray-700">{text}</p>
+                <pre className="px-2 py-1 font-sans text-gray-700 whitespace-pre-line">
+                  {text}
+                </pre>
+                {/* button container */}
                 <div>
-                  <button className="m-2 px-2 py-1 font-semibold bg-blue-400 text-white rounded-md cursor-pointer hover:bg-blue-600 active:bg-teal-800">
-                    Video
-                  </button>
-                  <button
-                    className="m-2 px-2 py-1 font-semibold bg-green-400 text-white rounded-md cursor-pointer hover:bg-green-600
-                  active:bg-pink-800"
-                  >
+                  <a href={runUrl} target="_blank" className="run-button">
+                    Run Code
+                  </a>
+                  <a href={sourceUrl} target="_blank" className="code-button">
                     Source Code
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
