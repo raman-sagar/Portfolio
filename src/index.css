@@ -19,4 +19,8 @@ body {
   .code-button {
     @apply inline-block m-2 px-2 py-1 font-semibold bg-green-900 text-white rounded-md cursor-pointer hover:bg-green-600 active:bg-pink-800;
   }
+
+  .cardText{
+    @apply h-40 overflow-y-auto px-2 py-1 font-sans whitespace-pre-line text-indigo-800 border-2 border-emerald-500 hover:border-pink-400 rounded-lg overscroll-contain
+  }
 }

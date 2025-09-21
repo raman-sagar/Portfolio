@@ -6,8 +6,6 @@ import bootstrap from "../../public/Bootstrap.png";
 import js from "../../public/javascript.png";
 import react from "../../public/reactjs.png";
 
-import "./Portfolio.css";
-
 export const Portfolio = () => {
   const cardItem = [
     {
@@ -17,6 +15,8 @@ export const Portfolio = () => {
       runUrl: "https://centralcare.netlify.app/",
       sourceUrl: "https://github.com/raman-sagar/Clinic-management-system",
       text: `Clinic Management System.Fully Functional Mega Project using HTML CSS and JavaScript.
+      To understand the working of this project.
+      Go to source code and open the 'Clinic management System.docx' file.
       Click On 'Run Code' Button to run the Project 
       Click On 'Source Code' Button to view the source code `,
     },
@@ -34,9 +34,11 @@ export const Portfolio = () => {
       id: 3,
       logo: tailwind,
       name: "Tailwind",
-      runUrl: "https://googleclone9389.netlify.app/",
+      runUrl: "https://googleclone9389.netlify.app/src/index.html",
       sourceUrl: "https://github.com/raman-sagar/Google-Clone",
-      text: "yah tailwind hai",
+      text: `I have created google clone home page using HTML and Tailwind only.In this portfolio,I have also used Tailwind css for styling.And My Other mini projects also include tailwind for styling.
+      Click On 'Run Code' Button to run the mini-project. 
+      Click On 'Source Code' Button to view the source code `,
     },
     {
       id: 4,
@@ -44,7 +46,7 @@ export const Portfolio = () => {
       name: "Bootstrap",
       runUrl: "#",
       sourceUrl: "#",
-      text: "yah bootstrap hai",
+      text: "Comming Soon",
     },
     {
       id: 5,
@@ -52,7 +54,11 @@ export const Portfolio = () => {
       name: "javascript",
       runUrl: "https://raman-gym.netlify.app/",
       sourceUrl: "https://github.com/raman-sagar/gym-management-system",
-      text: "yah javascript hai",
+      text: `Gym Management System.Fully Functional Mega Project using HTML CSS and JavaScript.
+      To understand the working of this project.
+      Go to source code and open the 'Gym management System.docx' file.
+      Click On 'Run Code' Button to run the Project 
+      Click On 'Source Code' Button to view the source code `,
     },
     {
       id: 6,
@@ -60,7 +66,7 @@ export const Portfolio = () => {
       name: "React",
       runUrl: "#",
       sourceUrl: "https://github.com/raman-sagar/Portfolio",
-      text: "yah react hai",
+      text: "coming soon",
     },
   ];
   return (
@@ -79,7 +85,7 @@ export const Portfolio = () => {
           {cardItem.map(({ id, logo, name, runUrl, sourceUrl, text }) => (
             <div
               key={id}
-              className=" rounded-lg  p-1 cursor-pointer bg-emerald-400 relative hover:bg-rose-400 card"
+              className=" rounded-lg  p-1 cursor-pointer bg-emerald-400 relative hover:bg-rose-300  shadow-2xl/30 duration-400 border border-emerald-600 hover:scale-102"
             >
               <div className="flex justify-center">
                 <img
@@ -91,11 +97,14 @@ export const Portfolio = () => {
                 <div className="font-bold text-center my-2 text-purple-600">
                   {name}
                 </div>
-                <pre className="px-2 py-1 font-sans text-gray-700 whitespace-pre-line">
+                <pre
+                  className="cardText"
+                  style={{ scrollbarColor: " transparent transparent" }}
+                >
                   {text}
                 </pre>
                 {/* button container */}
-                <div>
+                <div class="relative  bottom-0 left-0 right-0">
                   <a href={runUrl} target="_blank" className="run-button">
                     Run Code
                   </a>

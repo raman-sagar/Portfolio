@@ -10,10 +10,15 @@ export const Experiance = () => {
   const cardItem = [
     { id: 1, logo: html, name: "HTML", text: "Minimum 2 Years Experiance" },
     { id: 2, logo: css, name: "CSS", text: "Minimum 2 Years Experiance" },
-    { id: 3, logo: tailwind, name: "Tailwind", text: " Less than 1 year" },
+    {
+      id: 3,
+      logo: tailwind,
+      name: "Tailwind",
+      text: "Minimum 1 Year Experiance",
+    },
     { id: 4, logo: bootstrap, name: "Bootstrap", text: "Less than 1 year" },
-    { id: 5, logo: js, name: "javascript", text: "1 Year Experiance" },
-    { id: 6, logo: react, name: "React", text: "1 Year Experiance" },
+    { id: 5, logo: js, name: "javascript", text: "Minimum 1 Year Experiance" },
+    { id: 6, logo: react, name: "React", text: "Minimum 1 Year Experiance" },
   ];
   return (
     <>
@@ -28,7 +33,7 @@ export const Experiance = () => {
           {cardItem.map(({ id, logo, name, text }) => (
             <div
               key={id}
-              className="border-[3px] border-lime-500 bg-lime-900 rounded-lg shadow-lg p-1 cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 duration-300"
+              className="border-[3px] border-gray-500 bg-purple-900 hover:bg-fuchsia-600 rounded-lg shadow-2xl/30 p-1 cursor-pointer hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 duration-300"
             >
               <div className="flex justify-center">
                 <img
