@@ -1,4 +1,3 @@
-import React from "react";
 
 export const About = () => {
   return (
@@ -80,7 +79,7 @@ export const About = () => {
           almost strong command on JavaScript and React.But this is not enough.
           <p>
             If you give me a chance to work in your company,I will gain more
-            experiance and take your company to heights.
+            experience and take your company to heights.
           </p>
         </div>
         <br />

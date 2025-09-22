@@ -1,4 +1,3 @@
-import React from "react";
 import html from "../../public/html.png";
 import css from "../../public/css.jpg";
 import tailwind from "../../public/tailwind.png";
@@ -6,28 +5,28 @@ import bootstrap from "../../public/Bootstrap.png";
 import js from "../../public/javascript.png";
 import react from "../../public/reactjs.png";
 
-export const Experiance = () => {
+export const Experience = () => {
   const cardItem = [
-    { id: 1, logo: html, name: "HTML", text: "Minimum 2 Years Experiance" },
-    { id: 2, logo: css, name: "CSS", text: "Minimum 2 Years Experiance" },
+    { id: 1, logo: html, name: "HTML", text: "Minimum 2 Years Experience" },
+    { id: 2, logo: css, name: "CSS", text: "Minimum 2 Years Experience" },
     {
       id: 3,
       logo: tailwind,
       name: "Tailwind",
-      text: "Minimum 1 Year Experiance",
+      text: "Minimum 1 Year Experience",
     },
     { id: 4, logo: bootstrap, name: "Bootstrap", text: "Less than 1 year" },
-    { id: 5, logo: js, name: "javascript", text: "Minimum 1 Year Experiance" },
-    { id: 6, logo: react, name: "React", text: "Minimum 1 Year Experiance" },
+    { id: 5, logo: js, name: "javascript", text: "Minimum 1 Year Experience" },
+    { id: 6, logo: react, name: "React", text: "Minimum 1 Year Experience" },
   ];
   return (
     <>
       <div
-        name="Experiance"
+        name="Experience"
         className="max-w-screen container mx-auto py-4 px-4 md:px-20"
       >
         <h1 className="text-center md:text-start text-xl md:text-2xl font-extrabold tracking-wider bg-linear-to-r from-emerald-500 via-rose-400 to-purple-500 bg-clip-text text-transparent">
-          Experiance
+          Experience
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5  mt-4">
           {cardItem.map(({ id, logo, name, text }) => (

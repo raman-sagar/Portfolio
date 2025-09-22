@@ -2,7 +2,7 @@ import { Navbar } from "./components/Navbar";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Portfolio } from "./components/Portfolio";
-import { Experiance } from "./components/Experiance";
+import { Experience } from "./components/Experience";
 import { Footer } from "./components/Footer";
 import { Contact } from "./components/Contact";
 import { Toaster } from "react-hot-toast";
@@ -20,7 +20,7 @@ function App() {
         <Home />
         <About />
         <Portfolio />
-        <Experiance />
+        <Experience />
         <Contact />
         <Footer />
       </div>

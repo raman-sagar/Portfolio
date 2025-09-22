@@ -2,6 +2,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 export const Footer = () => {
   return (
     <>
@@ -39,6 +40,14 @@ export const Footer = () => {
                 target="_blank"
               >
                 <FaInstagram className="text-2xl md:text-3xl text-red-400 hover:scale-110 duration-200 cursor-pointer" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/raman-sagar"
+                target="_blank"
+              >
+                <FaGithubSquare className="text-2xl md:text-3xl text-black hover:scale-110 duration-200 cursor-pointer" />
               </a>
             </li>
           </ul>

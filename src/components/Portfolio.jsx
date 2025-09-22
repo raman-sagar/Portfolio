@@ -1,4 +1,3 @@
-import React from "react";
 import html from "../../public/html.png";
 import css from "../../public/css.jpg";
 import tailwind from "../../public/tailwind.png";
@@ -46,7 +45,8 @@ export const Portfolio = () => {
       name: "Bootstrap",
       runUrl: "#",
       sourceUrl: "#",
-      text: "Comming Soon",
+      text: `I have a knowledge Bootstrap but I have not used bootstrap in mega projects because bootstrap is not as much effective as tailwind.
+      You will see projects on bootstrap Soon`,
     },
     {
       id: 5,
@@ -64,9 +64,11 @@ export const Portfolio = () => {
       id: 6,
       logo: react,
       name: "React",
-      runUrl: "#",
-      sourceUrl: "https://github.com/raman-sagar/Portfolio",
-      text: "coming soon",
+      runUrl: "https://pokemon9389.netlify.app/",
+      sourceUrl: "https://github.com/raman-sagar/Pokemon-Project",
+      text: `Pokemon Project. Fully Mega Project using React and Tailwind.This portfolio is also built using React and Tailwind.Other projects comming soon based on the React
+      Click On 'Run Code' Button to run the Project 
+      Click On 'Source Code' Button to view the source code `,
     },
   ];
   return (

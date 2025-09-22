@@ -2,6 +2,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
@@ -10,7 +11,7 @@ import { FaReact } from "react-icons/fa";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { FaBootstrap } from "react-icons/fa6";
 
-import { ReactTyped, Typed } from "react-typed";
+import { ReactTyped } from "react-typed";
 
 import pic from "../../public/profile1.jpg";
 
@@ -52,7 +53,10 @@ export const Home = () => {
               positively to the digital landscape. I am committed to continuous
               learning and growth, always seeking new challenges and
               opportunities to expand my horizons.
-              <p>If you give me a chance to work in your company,I will gain more experiance and take your company to heights.</p>
+              <p>
+                If you give me a chance to work in your company,I will gain more
+                experience and take your company to heights.
+              </p>
             </div>
             <br></br>
 
@@ -80,7 +84,7 @@ export const Home = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://wa.me/9389238342" target="-blank">
+                    <a href="https://wa.me/9389238342" target="_blank">
                       <FaWhatsapp className="text-2xl md:text-3xl text-green-600 hover:scale-110 duration-200 cursor-pointer" />
                     </a>
                   </li>
@@ -90,6 +94,11 @@ export const Home = () => {
                       target="_blank"
                     >
                       <FaInstagram className="text-2xl md:text-3xl text-red-400 hover:scale-110 duration-200 cursor-pointer" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/raman-sagar" target="_blank">
+                      <FaGithubSquare className="text-2xl md:text-3xl text-black-600 hover:scale-110 duration-200 cursor-pointer" />
                     </a>
                   </li>
                 </ul>
