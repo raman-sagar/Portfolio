@@ -52,7 +52,7 @@ export const Portfolio = () => {
       id: 5,
       logo: js,
       name: "javascript",
-      runUrl: "https://raman-gym.netlify.app/",
+      runUrl: "https://gym9389.netlify.app/",
       sourceUrl: "https://github.com/raman-sagar/gym-management-system",
       text: `Gym Management System.Fully Functional Mega Project using HTML CSS and JavaScript.
       To understand the working of this project.
