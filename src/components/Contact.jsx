@@ -20,7 +20,10 @@ export const Contact = () => {
       date: data.date,
     };
     try {
-      const res = await axios.post("http://localhost:3000/post", userInfo);
+      const res = await axios.post(
+        "https://portfolio-backend-8rqn.onrender.com/post",
+        userInfo
+      );
       if (res.status == 200) {
         toast.success("Your message has been sent");
       }
