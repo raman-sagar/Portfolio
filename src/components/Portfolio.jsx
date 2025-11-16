@@ -4,6 +4,7 @@ import tailwind from "../../public/tailwind.png";
 import bootstrap from "../../public/Bootstrap.png";
 import js from "../../public/javascript.png";
 import react from "../../public/reactjs.png";
+import mern from "../../public/mern-stack.jpeg";
 
 export const Portfolio = () => {
   const cardItem = [
@@ -70,6 +71,17 @@ export const Portfolio = () => {
       Click On 'Run Code' Button to run the Project 
       Click On 'Source Code' Button to view the source code `,
     },
+    {
+      id: 7,
+      logo: mern,
+      name: "MERN Stack",
+      runUrl: "#",
+      sourceUrl: "#",
+      text: `Stundent CRUD API.Fully Functional Mega Project using mern stack.
+      To understand the working of this project.
+      Click On 'Run Code' Button to run the Project 
+      Click On 'Source Code' Button to view the source code `,
+    },
   ];
   return (
     <>
@@ -106,7 +118,7 @@ export const Portfolio = () => {
                   {text}
                 </pre>
                 {/* button container */}
-                <div class="relative  bottom-0 left-0 right-0">
+                <div className="relative  bottom-0 left-0 right-0">
                   <a href={runUrl} target="_blank" className="run-button">
                     Run Code
                   </a>

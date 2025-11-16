@@ -17,17 +17,30 @@ export const Contact = () => {
       name: data.username,
       email: data.email,
       message: data.message,
+      date: data.date,
     };
-
     try {
-      await axios.post("https://getform.io/f/adrdqlma", userInfo);
-      toast.success("Your message has been sent");
-      // console.log(myForm.current);
-      //Reset Form After successful submission
+      const res = await axios.post("http://localhost:3000/post", userInfo);
+      if (res.status == 200) {
+        toast.success("Your message has been sent");
+      }
       myForm.current.reset();
     } catch (error) {
-      toast.error("Something went wrong");
-      console.log(error.message);
+      console.log(error);
+      if (error.status === 500) {
+        if (error.response.data.error.code === 11000) {
+          toast.error("Email already exist");
+        } else {
+          toast.error("Something went wrong");
+        }
+      }
+      if (error.status === 400) {
+        if (error.response.data.error[0].msg) {
+          toast.error(`${error.response.data.error[0].msg} `);
+        } else {
+          toast.error("Something went wrong");
+        }
+      }
     }
   };
 
@@ -101,6 +114,30 @@ export const Contact = () => {
               {errors.email && (
                 <span className="text-red-500 relative -top-[8px]">
                   Email is required
+                </span>
+              )}
+              {/* Date Field */}
+              <div className="my-2">
+                <label
+                  className="block my-1 font-medium text-indigo-500"
+                  htmlFor="date"
+                >
+                  Date
+                </label>
+                <input
+                  {...register("date", { required: true })}
+                  type="date"
+                  id="date"
+                  name="date"
+                  placeholder="Email Address"
+                  className="w-full 
+                  text-slate-600
+                  focus:outline-emerald-400 focus:bg-neutral-500 focus:text-emerald-400 font-semibold md:w-110 py-1 px-2 bg-white outline-2 outline-gray-400 rounded"
+                />
+              </div>
+              {errors.date && (
+                <span className="text-red-500 relative -top-[8px]">
+                  Date is required
                 </span>
               )}
               {/* Message Field */}

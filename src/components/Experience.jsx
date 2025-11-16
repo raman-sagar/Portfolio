@@ -4,6 +4,7 @@ import tailwind from "../../public/tailwind.png";
 import bootstrap from "../../public/Bootstrap.png";
 import js from "../../public/javascript.png";
 import react from "../../public/reactjs.png";
+import mern from "../../public/mern-stack.jpeg";
 
 export const Experience = () => {
   const cardItem = [
@@ -18,6 +19,12 @@ export const Experience = () => {
     { id: 4, logo: bootstrap, name: "Bootstrap", text: "Less than 1 year" },
     { id: 5, logo: js, name: "javascript", text: "Minimum 1 Year Experience" },
     { id: 6, logo: react, name: "React", text: "Minimum 1 Year Experience" },
+    {
+      id: 7,
+      logo: mern,
+      name: "MERN Stack",
+      text: "Minimum 1 Year Experience",
+    },
   ];
   return (
     <>

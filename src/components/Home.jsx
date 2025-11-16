@@ -4,16 +4,19 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
+
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiJavascriptFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { FaBootstrap } from "react-icons/fa6";
-
+import { DiMongodb } from "react-icons/di"; //<DiMongodb />
+import { SiExpress } from "react-icons/si"; //<SiExpress />
 import { ReactTyped } from "react-typed";
-
+import { FaNode } from "react-icons/fa"; //<FaNode />
 import pic from "../../public/profile1.jpg";
+
 
 export const Home = () => {
   return (
@@ -119,7 +122,11 @@ export const Home = () => {
                   />
                   <BiLogoTailwindCss className="text-xl md:text-3xl text-blue-400 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
                   <RiJavascriptFill className="text-xl md:text-3xl text-amber-300 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
+                 
+                  <DiMongodb className="text-xl md:text-3xl text-emerald-700 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
+                  <SiExpress className="text-xl md:text-3xl text-red-900 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
                   <FaReact className="text-xl md:text-3xl text-sky-400 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
+                   <FaNode className="text-xl md:text-3xl text-green-500 hover:scale-110 duration-200 rounded-full -[2px] cursor-pointer" />
                 </div>
               </div>
             </div>
