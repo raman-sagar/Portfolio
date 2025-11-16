@@ -26,20 +26,20 @@ export const Contact = () => {
       }
       myForm.current.reset();
     } catch (error) {
-      console.log(error);
       if (error.status === 500) {
         if (error.response.data.error.code === 11000) {
           toast.error("Email already exist");
         } else {
           toast.error("Something went wrong");
         }
-      }
-      if (error.status === 400) {
+      } else if (error.status === 400) {
         if (error.response.data.error[0].msg) {
           toast.error(`${error.response.data.error[0].msg} `);
         } else {
           toast.error("Something went wrong");
         }
+      } else {
+        toast.error("Something went wrong");
       }
     }
   };
