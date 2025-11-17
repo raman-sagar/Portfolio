@@ -24,6 +24,7 @@ export const Contact = () => {
         "https://portfolio-backend-8rqn.onrender.com/post",
         userInfo
       );
+      console.log(res.data);
       if (res.status == 200) {
         toast.success("Your message has been sent");
       }
@@ -43,6 +44,7 @@ export const Contact = () => {
         }
       } else {
         toast.error("Something went wrong");
+        console.log(error);
       }
     }
   };
